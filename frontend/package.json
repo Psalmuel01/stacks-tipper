@@ -1,0 +1,49 @@
+{
+  "name": "tipper-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "React + TypeScript + Tailwind frontend for the Tipper Clarity contract using @stacks/connect (mainnet)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5173",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css,md,json}\""
+  },
+  "dependencies": {
+    "@stacks/connect": "^8.2.4",
+    "@stacks/network": "^7.3.1",
+    "@stacks/transactions": "^7.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.0.0",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.40.0",
+    "eslint-plugin-react": "^7.32.2",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.8",
+    "typescript": "^5.1.6",
+    "vite": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "keywords": [
+    "stacks",
+    "clarity",
+    "react",
+    "typescript",
+    "tailwind",
+    "tipper",
+    "hiro",
+    "connect"
+  ],
+  "author": "you",
+  "license": "MIT"
+}

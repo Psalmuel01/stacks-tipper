@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tipper — Stacks Mainnet</title>
+    <meta
+      name="description"
+      content="Frontend for the Tipper Clarity contract — React + TypeScript + Tailwind + @stacks/connect (mainnet)"
+    />
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- Vite will process this; Tailwind output should be imported in /src/index.css -->
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body class="antialiased bg-gray-50 text-gray-900">
+    <div id="root"></div>
+
+    <noscript>
+      This application requires JavaScript to run. Please enable JavaScript in your
+      browser settings.
+    </noscript>
+
+    <!-- App entry (Vite) -->
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Default runtime config the app can read (override in runtime if needed) -->
+    <script>
+      window.__TIPPER_APP__</script> = {
+        defaultNetwork: "mainnet",
+        // Add a placeholder contract address here if you want the app to pick it up by default.
+        // contractAddress: "ST000000000000000000002AMW42H",
+      };
+    </script>
+  </body>
+</html>
