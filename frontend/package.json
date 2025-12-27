@@ -1,49 +1,34 @@
 {
-  "name": "tipper-frontend",
-  "version": "0.1.0",
+  "name": "frontend",
   "private": true,
-  "description": "React + TypeScript + Tailwind frontend for the Tipper Clarity contract using @stacks/connect (mainnet)",
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview --port 5173",
-    "type-check": "tsc --noEmit",
-    "lint": "eslint \"src/**/*.{ts,tsx}\"",
-    "format": "prettier --write \"src/**/*.{ts,tsx,css,md,json}\""
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@stacks/connect": "^8.2.4",
-    "@stacks/network": "^7.3.1",
-    "@stacks/transactions": "^7.3.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "tailwindcss": "^4.1.18"
+    "@tailwindcss/vite": "^4.1.18",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
-    "@types/react": "^19.2.7",
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.5",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^4.0.0",
-    "autoprefixer": "^10.4.13",
-    "eslint": "^8.40.0",
-    "eslint-plugin-react": "^7.32.2",
-    "postcss": "^8.4.21",
-    "prettier": "^2.8.8",
-    "typescript": "^5.1.6",
-    "vite": "^5.1.0"
-  },
-  "engines": {
-    "node": ">=16"
-  },
-  "keywords": [
-    "stacks",
-    "clarity",
-    "react",
-    "typescript",
-    "tailwind",
-    "tipper",
-    "hiro",
-    "connect"
-  ],
-  "author": "you",
-  "license": "MIT"
+    "@vitejs/plugin-react": "^5.1.1",
+    "autoprefixer": "^10.4.23",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.4",
+    "vite": "^7.2.4"
+  }
 }
